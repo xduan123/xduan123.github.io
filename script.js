@@ -103,10 +103,20 @@
       resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}, Code: Crack!123`;
       resultsContainer.style.color = "green";
       resultsContainer.style.fontSize = "x-large";
+      $(function () {
+        $(`<div id="dialog_correct" title="Quiz Result" >
+        <p class="dialog_correct">${numCorrect} out of ${myQuestions.length}, Code: Crack!123</p>
+      </div>`).dialog();
+      });
     } else {
       resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}, please try again`;
       resultsContainer.style.color = "red";
       resultsContainer.style.fontSize = "x-large";
+      $(function () {
+        $(`<div id="dialog_wrong" title="Quiz Result" >
+        <p class="dialog_wrong">${numCorrect} out of ${myQuestions.length}, please try again</p>
+      </div>`).dialog();
+      });
     }
   }
 

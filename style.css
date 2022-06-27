@@ -49,3 +49,13 @@ body {
 img {
   margin: 5px;
 }
+
+.dialog_correct {
+    color: green;
+    font-size: x-large;
+}
+
+.dialog_wrong {
+    color: red;
+    font-size: x-large;
+}
