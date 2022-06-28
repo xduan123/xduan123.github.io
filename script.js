@@ -22,7 +22,7 @@
 
       // add this question, image, answers and explanation to the output
       output.push(
-        ` <div class="w3-padding-16 w3-border w3-container">
+        `<div class="w3-padding-16 w3-border w3-container">
         <picture>
               <img
               src="${currentQuestion.img_url}"
