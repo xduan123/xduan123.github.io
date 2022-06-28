@@ -24,26 +24,25 @@
       output.push(
         `<div class="w3-padding-16 w3-border w3-container">
         <picture>
-              <img
-              src="${currentQuestion.img_url}"
-              class="thumbnail"
-              alt=""
-              width="284"
-              height="182"
-              />
-              </picture>
-            <div class="question"> ${questionNumber + 1}. ${
-          currentQuestion.question
-        } </div>
-             
-              <div class="answers"> ${answers.join("")} </div>
-              <div class="explain" id="correct_explain"> ${
-                currentQuestion.correctExplain
-              } </div>
-              <div class="explain" id="wrong_explain"> ${
-                currentQuestion.wrongExplain
-              } </div>
-              </div>`
+          <img
+            src="${currentQuestion.img_url}"
+            class="thumbnail"
+            alt=""
+            width="284"
+            height="182"
+          />
+        </picture>
+        <div class="question">
+          ${questionNumber + 1}. ${ currentQuestion.question }
+        </div>
+        <div class="answers">${answers.join("")}</div>
+        <div class="explain" id="correct_explain">
+          ${ currentQuestion.correctExplain }
+        </div>
+        <div class="explain" id="wrong_explain">
+          ${ currentQuestion.wrongExplain }
+        </div>
+      </div>`
       );
     });
 
