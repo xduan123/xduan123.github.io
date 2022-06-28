@@ -22,7 +22,8 @@
 
       // add this question, image, answers and explanation to the output
       output.push(
-        ` <picture>
+        ` <div class="w3-padding-16 w3-border w3-container">
+        <picture>
               <img
               src="${currentQuestion.img_url}"
               class="thumbnail"
@@ -41,7 +42,8 @@
               } </div>
               <div class="explain" id="wrong_explain"> ${
                 currentQuestion.wrongExplain
-              } </div>`
+              } </div>
+              </div>`
       );
     });
 

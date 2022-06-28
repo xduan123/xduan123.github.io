@@ -1,11 +1,25 @@
 body {
+
+  padding: 30px;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
 }
 .question {
+  font-size: 1.2em;
 }
 
 /* answer section style */
 .answers {
   margin-bottom: 5px;
+  font-size: 1em;
 }
 .answers label {
   display: block;
@@ -20,6 +34,7 @@ body {
   padding: 20px;
   cursor: pointer;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* change button background color */
@@ -51,11 +66,11 @@ img {
 }
 
 .dialog_correct {
-    color: green;
-    font-size: x-large;
+  color: green;
+  font-size: x-large;
 }
 
 .dialog_wrong {
-    color: red;
-    font-size: x-large;
+  color: red;
+  font-size: x-large;
 }
